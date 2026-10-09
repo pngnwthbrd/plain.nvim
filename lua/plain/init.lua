@@ -52,6 +52,8 @@ function M.load()
 
     set(0, "Directory", { fg = fg })
 
+    set(0, "Delimiter", { fg = fg })
+
     -- UI
     set(0, "LineNr", { fg = palette.linenr })
     set(0, "CursorLineNr", { fg = palette.cursorlinenr})
@@ -64,6 +66,8 @@ function M.load()
     set(0, "@function", { fg = fg })
     set(0, "@keyword", { fg = fg })
     set(0, "@string", { fg = fg })
+    set(0, "@punctuation.bracket", { fg = fg })
+    set(0, "@punctuation.delimiter", { fg = fg })
 end
 
 return M
