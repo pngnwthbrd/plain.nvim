@@ -12,6 +12,7 @@ A minimal Neovim colorscheme that intentionally removes syntax highlighting.
 
 - Fully monochrome design
 - Optional `dim_comments` mode
+- Selectable `fg` color variant (`default`, `nerdy`, `sunny`)
 
 ## Installation (Lazy.nvim)
 
@@ -22,6 +23,7 @@ A minimal Neovim colorscheme that intentionally removes syntax highlighting.
   config = function()
     require("plain").setup({
       dim_comments = false,
+      fg = "default", -- "default" | "nerdy" | "sunny"
     })
 
     vim.cmd.colorscheme("plain")
